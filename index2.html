@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login from</title>
+</head>
+<style>
+    body{
+        background-image: url("https://source.unsplash.com/1400x800?/drifting cars");
+        border: none;
+    }
+.car {
+
+    width: 40%;
+    height: 60vh;
+    border-radius: 14px;
+    box-shadow: 0px 0px 0px 101px(black);
+    margin: 7% auto;
+    background: rgba(0, 0, 0, 0.493);
+    text-align: center;
+}
+h2.head{
+    color: rgb(222, 240, 234);
+    margin-top: -1%;
+    font-size: 29px;
+}
+input#Gmail,#pass {
+    padding: 14px;
+    border-radius: 16px;
+    border: none;
+    font-size: 13px;
+}
+::placeholder{
+    padding-left: 1%;
+    color: rgb(0, 0, 0);
+    margin-left: 3%;
+}
+a {
+    margin-left: -9%;
+}
+button{
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 900;
+    border: none;
+    border-radius: 8px;
+    margin-top: 3%;
+}
+#ja:hover{
+    background-color: rgba(217, 7, 7, 0.613);
+    transition: 0.5s;
+    color: aliceblue;
+}
+</style>
+<body>
+    <!-- <h1 style="color: rgb(0, 0, 0); text-align: center;font-size: 30px;">Cars lover's only</h1> -->
+    <div class="car">
+        <form action="#">
+            <button onclick="lk()" style="background : brown;">Login</button> <button id="ja" onclick="kk()">signup</button> <br><br> 
+            <h2 class="head">Login</h2>
+            <input type="text" placeholder="Enter your Gmail" id="Gmail" required> <br> <br>
+            <input type="password" placeholder="Enter the password" id="pass"><br> <br>
+            <a href="#">Forget password</a> <br> <br>
+            <button id="btn" style="background: tomato; " >Submit</button>
+        </form>
+    </div>
+    <script>
+         let btn = document.getElementById("btn");
+         let mail = document.getElementById("Gmail");
+         let pass = document.getElementById("pass");
+         
+         btn.addEventListener("click",function(){
+            if(mail.value=="" || pass.value==""){
+                alert("please enter the detials");
+            }
+            else{
+            alert("Thank you for Login")
+            window.location.herf="https://carloversworld.com/"
+            }
+         })
+        function kk(){
+            window.location.href="index3.html"
+        }
+    </script>
+</body>
+</html>

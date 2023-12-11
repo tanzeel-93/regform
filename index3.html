@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login from</title>
+</head>
+<style>
+.car {
+    width: 40%;
+    height: 63vh;
+    border-radius: 14px;
+    box-shadow: 0px 0px 0px 101px(black);
+    margin: 7% auto;
+    background: rgba(0, 0, 0, 0.493);
+    text-align: center;
+}
+h2.head{
+    color: whitesmoke;
+    margin-top: -1%;
+    font-size: 29px;
+}
+input#Gmail,#pass {
+    padding: 14px;
+    border-radius: 16px;
+    border: none;
+    font-size: 13px;
+}
+::placeholder{
+    padding-left: 1%;
+    color: rgb(0, 0, 0);
+    margin-left: 3%;
+}
+a {
+    margin-left: -9%;
+}
+body{
+        background-image: url("https://source.unsplash.com/1400x800?/drifting cars");
+    }
+button{
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 900;
+    border: none;
+    border-radius: 8px;
+    margin-top: 3%;
+}
+#aj:hover{
+    background-color: rgba(217, 7, 7, 0.613);
+    transition: 0.5s;
+    color: aliceblue;
+}
+</style>
+<body>
+    <!-- <h1 style="color: rgb(121, 121, 243); text-align: center;font-size: 30px;">Cars lover's only</h1> -->
+    <div class="car">
+        <form action="#">
+            <button id="aj" onclick="lk()">Login</button> <button style="background : brown;" onclick="kk()">signup</button> <br><br> 
+            <h2 class="head">Sign-up</h1>
+            <input type="text" placeholder="Enter your phone number (or )gmail" id="Gmail" required> <br> <br>
+            <input type="password" placeholder="Create new password" id="pass"><br> <br>
+            <input type="password" placeholder="Confirm password" id="pass"><br> <br>
+            <!-- <a href="#">Forget password</a> <br> <br> -->
+            <a href="https://carloversworld.com/"> <button id="btn" style="background: tomato; " >Submit</button></a>
+        
+        </form>
+    </div>
+    <script>
+         let btn = document.getElementById("btn");
+         let mail = document.getElementById("Gmail");
+         let pass = document.getElementById("pass");
+         
+         btn.addEventListener("click",function(){
+            if(mail.value=="" || pass.value==""){
+                alert("please enter the detials");
+            }
+            else{
+            alert("Thank you for Login")
+        }
+    })
+    function lk(){
+        window.location.href="index2.html"
+    }
+    </script>
+</body>
+</html>
