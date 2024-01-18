@@ -71,17 +71,26 @@ button{
          let mail = document.getElementById("Gmail");
          let pass = document.getElementById("pass");
          
-         btn.addEventListener("click",function(){
-            if(mail.value=="" || pass.value==""){
-                alert("please enter the detials");
-            }
-            else{
-            alert("Thank you for Login")
-        }
-    })
+         
+    //      btn.addEventListener("click",function(){
+    //         if(mail.value=="" || pass.value==""){
+    //             alert("please enter the detials");
+    //         }
+    //         else{
+    //         alert("Thank you for Login")
+    //     }
+    // })
     function lk(){
         window.location.href="index2.html"
     }
+    // console.log(mail).value;
+    function validateForm() {
+  let x = document.mail["myForm"]["fna  me"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
     </script>
 </body>
 </html>
